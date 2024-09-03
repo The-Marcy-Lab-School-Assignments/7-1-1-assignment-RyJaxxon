@@ -10,8 +10,10 @@ const BotPage = () => {
     return (
         <div>
             <h1>Robot Army:</h1>
-            <Filter setBotTypeFilter={setBotTypeFilter} />
-            <BotsList botTypeFilter={botTypeFilter} />
+            <div className = 'filterSection'>
+                <Filter setBotTypeFilter={setBotTypeFilter} />
+            </div>
+                <BotsList botTypeFilter={botTypeFilter} />
         </div>
     )
 }
